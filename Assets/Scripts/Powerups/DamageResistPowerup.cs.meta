@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 229ce1ceac98ada4380231674694485f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - go_plasmaProjectile: {fileID: 4757675903356120229, guid: 80c2244bf12499d4789f2a973229499e, type: 3}
+  - go_bfgProjectile: {fileID: 633341054857770580, guid: 5c29126264abdb34a9d71df5221f3e27, type: 3}
+  - go_rocket: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

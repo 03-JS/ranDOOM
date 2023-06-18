@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7267052594725619122
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1527114586783736108}
+  - component: {fileID: -3864219830388868958}
+  - component: {fileID: 3634941710302755698}
+  m_Layer: 0
+  m_Name: DemonSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1527114586783736108
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7267052594725619122}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-3864219830388868958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7267052594725619122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f723d75fe98724285a028b31ad7bc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fodderDemons:
+  - {fileID: 2852308123684256413, guid: b3f0e14c49ddb754cbdb887986b0871d, type: 3}
+  - {fileID: 7865799560077875687, guid: 690223a5b5ead4f4b9175ebb080c02bb, type: 3}
+  - {fileID: 4685805777384978145, guid: eb6c7f19f8c14fb4c939ac434fd51f66, type: 3}
+  - {fileID: 2354008365553696983, guid: 13abc2c18ac9d7743a01f833f9f517d5, type: 3}
+  extendedFodderDemons:
+  - {fileID: 7231696824499759626, guid: cf863e6e70178a24ba071362fa0c0607, type: 3}
+  - {fileID: 2852308123684256413, guid: b3f0e14c49ddb754cbdb887986b0871d, type: 3}
+  - {fileID: 7865799560077875687, guid: 690223a5b5ead4f4b9175ebb080c02bb, type: 3}
+  - {fileID: 4685805777384978145, guid: eb6c7f19f8c14fb4c939ac434fd51f66, type: 3}
+  - {fileID: 2354008365553696983, guid: 13abc2c18ac9d7743a01f833f9f517d5, type: 3}
+  heavyDemons:
+  - {fileID: 7611394744225145969, guid: c8d174c9d34a89a43baa16e8eda02bfe, type: 3}
+  - {fileID: 7611394744225145969, guid: 0a4fad2dbbe972044b1394d1bdbbb952, type: 3}
+  - {fileID: 9141680827436437624, guid: c00e1dd50c8b62841adcd875f38a53d8, type: 3}
+  - {fileID: 8959823133944407393, guid: 75622ea42b3783e4f9424d6d88a79d22, type: 3}
+  - {fileID: 1762775525252999684, guid: ca79edf16b0a9444c9b73b7359f23651, type: 3}
+  - {fileID: 8652829229425444320, guid: 815378b8f219cdb4f98c1ac6cd31e50c, type: 3}
+  extendedHeavyDemons:
+  - {fileID: 7611394744225145969, guid: c8d174c9d34a89a43baa16e8eda02bfe, type: 3}
+  - {fileID: 7611394744225145969, guid: 0a4fad2dbbe972044b1394d1bdbbb952, type: 3}
+  - {fileID: 1975071824754213060, guid: 628a23bbaa3486848af328b994a4c52e, type: 3}
+  - {fileID: 6341678253233196103, guid: e6164068b3155ba479574e34ceed416a, type: 3}
+  - {fileID: 1762775525252999684, guid: ca79edf16b0a9444c9b73b7359f23651, type: 3}
+  - {fileID: 8959823133944407393, guid: 75622ea42b3783e4f9424d6d88a79d22, type: 3}
+  - {fileID: 9141680827436437624, guid: c00e1dd50c8b62841adcd875f38a53d8, type: 3}
+  - {fileID: 8652829229425444320, guid: 815378b8f219cdb4f98c1ac6cd31e50c, type: 3}
+  thinSuperHeavyDemons:
+  - {fileID: 7044111783062704173, guid: 71719b8a180878d4abe6d571d89cbdd0, type: 3}
+  - {fileID: 3865212742312476693, guid: d276c93a77aef8a41bafff073c9a63ee, type: 3}
+  wideSuperHeavyDemons:
+  - {fileID: 8089341701226361895, guid: 72cee3ff1906b20489fee2f9927728a5, type: 3}
+  - {fileID: 8057997652326334040, guid: 0058de75dcd3d7f419637390f02e6ed2, type: 3}
+  f_delay: 0
+  dontDestroyAfterSpawn: 0
+  spawnsFodder: 0
+  spawnsExtendedFodder: 0
+  spawnsHeavy: 0
+  spawnsExtendedHeavy: 0
+  spawnsThinSuperHeavy: 0
+  spawnsWideSuperHeavy: 0
+  respawns: 0
+  spawnsAggro: 0
+  lookAtTarget: 0
+  lookOppositeToTarget: 0
+  useTeleportEffect: 0
+  go_teleportEffect: {fileID: 4458578217681664082, guid: 36a32df58fb81df43be10212900abf4b, type: 3}
+--- !u!65 &3634941710302755698
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7267052594725619122}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

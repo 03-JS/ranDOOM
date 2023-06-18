@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 3ff12e8f2cc970e41bc91947db23228e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - ac_sound: {fileID: 8300000, guid: 7531fbc394c12404baca4b3285d7b426, type: 3}
+  - ac_stoppingSound: {fileID: 8300000, guid: d78353743cc134948a4e9da29002b104, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

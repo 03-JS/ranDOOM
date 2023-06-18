@@ -1,0 +1,307 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &931167803354059145
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 931167803354059147}
+  - component: {fileID: 931167803354059144}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &931167803354059147
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931167803354059145}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &931167803354059144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931167803354059145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4d45ae04a78f8746aefd641f7c52f5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  songs:
+  - acl_audio: {fileID: 8300000, guid: c62baf5d8b931af4982d559cdd307f27, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: f45d5a53ddc005a43be1ef47c7a75623, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 50ab59fe71266c6409178d6744dfb06c, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: c692fb5c8854c37488d9043c0490d315, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: a210be7bd66f9934f945d29ffa4c6f3f, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: e3e0a644be0459c46a674b87e80bc28d, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 2585248439e36bc48bb7bda51eb20989, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: b2e81dc115030b94b843ad511a182ec5, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 1f250de8383f0b9428b4850a309b20ff, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 7f7cbc73abe42ed46bce790f9bb95b42, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: c26422b48e77d2c44b7b7f866c9d376e, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: cc3d5f05cabbdd745ac40ee6e16867d1, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 331d64d2fbea4124fadffe444154c4e1, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: eeca002e3297fd645a2cb9292bebe783, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: fa5ab3c75e19fd64f8c6ef5a9e8ff3dc, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 131767d6e4bff1141ad9dcc437d94c22, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 313f0063beec0bf46b35a55007aec7ac, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 1a523bcc2d9444a42aa6323b225c0754, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 72f87bb25a4b2e14eb16fdeaf83f1c7b, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: aaae0886b636d30438f16d81871ace83, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 07b5b3ab982ff994fb21b97280463715, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  classicSongs:
+  - acl_audio: {fileID: 8300000, guid: 303c428fde538f14e9abea207d661451, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 537cc1c13adcb6542987d9b594c99a67, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 262f1d3a3bfa1ef449a3862e475c3236, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 9665a3d967f349f4ba6a1de88a70cc27, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: e569fe8d4318f4c4cb3e24a80acf5ac3, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: bc2777dfa29dd7048a4843232175af60, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 7c934de93d675c14c8ffeb837a935eda, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 6f02a9c58fa98a54397a95b8244b62f2, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: fa846e0bc5e947d49b6bbffa7c29c46a, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 924d0c84fca2492478f1783832a067cc, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: bfc01e493b5c2c34f9a96fc737f274c9, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 52dc6ae9035725b4ab1f54898a801984, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: e0dd6bee87ae81643bd68bd9ae4a3b3d, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 5571b20e801399c4fa4887bce222eec9, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 8a1511c0553bf8b47976a3317e432315, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 638797359213a0145a7f4a13aa5cf118, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 649c5cb8a19a6ea46bc0ea8b494e3ea9, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 85b85778fbc1d5d4190dae4b56a161b6, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 959f46685cb6ac842823ac66742e217c, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 742960a5ef2c8de4db20c4475d01878d, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 975e9e7649bbbc343aa850a8cfdaad74, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 9c63bd0eff2790e429c1ec69df54bb8c, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 44b5eae83f4a65044aabeea391c69fb3, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 77c62933f517b0340aa2ad5f9859a27d, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 285115e9b9b9b0e44be594aebcba0d2b, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: ca513ae7f7a8d3041b3add785f60737f, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: b82979d0fbc4dc34d95e08479e31d26c, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 92db28d3cf047cc488e75a64a11ee81e, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: cb47c90f0cab1b34087673bc3ef2c4db, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 4cba9eb9a8f13404cbd426b246e33305, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: e8fc3a3f5e972674fa891c7903516d2c, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 1c8671a96ac21f34485e98d612cba25f, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: ab9b4b06f363d1b49b22a91cd9247fa8, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 91f262ab4a4fd5349ac09b1260ffed44, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: f61ef00490c46d84d8580e32a80a8ca1, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 073741a99e0fc964b986971579a2e5a9, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  - acl_audio: {fileID: 8300000, guid: 76ed7c08ab89559408714d5fb5bd2f9e, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 1
+  soundEffects:
+  - acl_audio: {fileID: 8300000, guid: 28d20fbc428dcfb44823075217672fe0, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  - acl_audio: {fileID: 8300000, guid: d91a17edd23f5bb4183039bdcad22189, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  - acl_audio: {fileID: 8300000, guid: b9b48fcf71125034481cc810d18089c4, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  - acl_audio: {fileID: 8300000, guid: 14ca3922a51d8024faec2baac2382288, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  - acl_audio: {fileID: 8300000, guid: 3559538bbe3c91d4f8c54d7ea41f5569, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  - acl_audio: {fileID: 8300000, guid: 22af116ac962506438758d87479a19c8, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  - acl_audio: {fileID: 8300000, guid: a7341d018de6ef44d8b783402877a31d, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  - acl_audio: {fileID: 8300000, guid: c4c9b5348ed6de04baf4101be57ef1d1, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  - acl_audio: {fileID: 8300000, guid: 5afea135472287445ab954319056ae6d, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  - acl_audio: {fileID: 8300000, guid: 24277511975449441943d6a98efe63c6, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  menuSoundEffects:
+  - acl_audio: {fileID: 8300000, guid: cae0b8aacb32a8241ba46d894f5f9895, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  - acl_audio: {fileID: 8300000, guid: 55930379309346d49b6afe64f36669dd, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  - acl_audio: {fileID: 8300000, guid: 0c7bd8fc903b022459585244a4db115f, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  - acl_audio: {fileID: 8300000, guid: d78353743cc134948a4e9da29002b104, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  - acl_audio: {fileID: 8300000, guid: 14ca3922a51d8024faec2baac2382288, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  weaponSoundEffects:
+  - acl_audio: {fileID: 8300000, guid: 76669261995d4834085149d69cc3f521, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  - acl_audio: {fileID: 8300000, guid: 366b2cfe52e10bb4980cec7ad8656ec6, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  - acl_audio: {fileID: 8300000, guid: cb15c63fa03abd94893fd4dcc0a19408, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  - acl_audio: {fileID: 8300000, guid: 4e26de926e5a0cb4caec7bfaf4da2fa6, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  - acl_audio: {fileID: 8300000, guid: d93a70277e229da4fa46369e98ac8d6d, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  - acl_audio: {fileID: 8300000, guid: d7dc91017680e56449667d0cb1492b9d, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  - acl_audio: {fileID: 8300000, guid: 536123a88a77d604194c7cb3ddb6b2a4, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  - acl_audio: {fileID: 8300000, guid: abd347d5c04d7d5438386e1be1c7f179, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  - acl_audio: {fileID: 8300000, guid: b0e07d82639b1cb4c99438e8ebdbb778, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  reloadSoundEffects:
+  - acl_audio: {fileID: 8300000, guid: eccd9527f49d1d84c9d724b9409c62e7, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  - acl_audio: {fileID: 8300000, guid: 85f8a61b36d5bae49b95c5930795cea8, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
+  - acl_audio: {fileID: 8300000, guid: a7622881bbd590f4488d863d2fd63be6, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
