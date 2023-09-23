@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8681701557120466984}
   - component: {fileID: 6082608143856526980}
+  - component: {fileID: 293676750028899735}
   m_Layer: 2
   m_Name: Yellow Keycard
   m_TagString: Key
@@ -165,3 +166,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &293676750028899735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6277251345104600882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f708d3b9a2725b4c9c0f447269f172b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  increaseItems: 1
+  increaseSecrets: 0

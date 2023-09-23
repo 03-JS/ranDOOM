@@ -80,7 +80,7 @@ public class MenuInputManager : MonoBehaviour
 
     public void RandomlySelectLevel()
     {
-        SceneManager.LoadScene(Random.Range(1, SceneManager.sceneCountInBuildSettings));
+        SceneManager.LoadScene(Random.Range(2, SceneManager.sceneCountInBuildSettings));
     }
 
     public void EnableHiddenObjects()

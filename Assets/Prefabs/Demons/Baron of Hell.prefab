@@ -328,6 +328,7 @@ MonoBehaviour:
   go_bloodEffect: {fileID: 0}
   ac_painSound: {fileID: 8300000, guid: d1fe87d298622434d9a2922211bc47cd, type: 3}
   go_projectile: {fileID: 6296236220915693414, guid: 896cd53f406a3e742af71b5f96adf8dc, type: 3}
+  go_attackLight: {fileID: 0}
   tr_attackOrigins:
   - {fileID: 1356233455623102693}
   ac_projectileAttackSound: {fileID: 8300000, guid: caa3ca052c3222e4b897f52e04e7a716, type: 3}

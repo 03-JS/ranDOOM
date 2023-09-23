@@ -8,12 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 9c63e4fb1faff6e428bcd3fd3af4bab3
-  - enabled: 0
-    path: Assets/Scenes/Waste Complex.unity
-    guid: e7420aa0aeedb14479bcf7037144aad7
+  - enabled: 1
+    path: Assets/Scenes/Intermission.unity
+    guid: 1a4a76facad3f08448b14473a0727514
   - enabled: 1
     path: Assets/Scenes/The Graveyard.unity
     guid: 48bd34a99fc27994f9b0396be3ce0a24
+  - enabled: 1
+    path: Assets/Scenes/Waste Complex.unity
+    guid: e7420aa0aeedb14479bcf7037144aad7
   - enabled: 0
     path: Assets/Scenes/Abandoned Facility.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab

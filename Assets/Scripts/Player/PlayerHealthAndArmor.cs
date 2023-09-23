@@ -245,6 +245,7 @@ public class PlayerHealthAndArmor : MonoBehaviour
         uiManager.img_crosshair.enabled = false;
         uiManager.DisableUI();
         inventory.DisableCurrentlyEquippedWeapon();
+        LevelStats.ResetStats();
     }
 
     public void SetGodMode(bool value)
@@ -263,6 +264,6 @@ public class PlayerHealthAndArmor : MonoBehaviour
     public void MakePlayerInvulnerable(bool value)
     {
         isInvulnerable = value;
-        Debug.Log("Is player invul?: " + isInvulnerable);
+        // Debug.Log("Is player invul?: " + isInvulnerable);
     }
 }

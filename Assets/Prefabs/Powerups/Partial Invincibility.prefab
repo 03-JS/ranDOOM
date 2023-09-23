@@ -129,7 +129,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3472648373229596549}
   - component: {fileID: 3472648373229596570}
-  - component: {fileID: 3820032443884141381}
   m_Layer: 2
   m_Name: Point Light
   m_TagString: Untagged
@@ -214,26 +213,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &3820032443884141381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3472648373229596548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Version: 1
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1 &4445924383399128013
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,6 +223,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6351830832683868422}
   - component: {fileID: 3472648372162827191}
+  - component: {fileID: 2951676428456432663}
   m_Layer: 2
   m_Name: Partial Invincibility
   m_TagString: Powerup
@@ -281,3 +261,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2951676428456432663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4445924383399128013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f708d3b9a2725b4c9c0f447269f172b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  increaseItems: 1
+  increaseSecrets: 0

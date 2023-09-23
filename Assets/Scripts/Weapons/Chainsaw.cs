@@ -184,7 +184,7 @@ public class Chainsaw : MonoBehaviour
         player.MakePlayerInvulnerable(true);
         if (hitInfo.transform.gameObject.GetComponent<DemonHealth>().isDead)
         {
-            Debug.Log("Consumed " + fuel + " fuel can");
+            // Debug.Log("Consumed " + fuel + " fuel can");
             GiveAmmo();
             inventory.i_fuel -= fuel;
             uiManager.tmp_fuel.SetText(inventory.i_fuel + "");

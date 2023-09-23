@@ -28,6 +28,7 @@ public class DemonSpawner : MonoBehaviour
     [Space]
     public bool useTeleportEffect;
     public GameObject go_teleportEffect;
+    public Material defaultSpriteMaterial;
 
     private GameObject demon;
     private bool shouldRespawn;
@@ -35,6 +36,7 @@ public class DemonSpawner : MonoBehaviour
     void OnEnable()
     {
         Invoke("SpawnDemon", f_delay);
+        // LevelStats.maxKills++;
     }
 
     void Update()
@@ -101,6 +103,10 @@ public class DemonSpawner : MonoBehaviour
         if (!respawns && !dontDestroyAfterSpawn)
         {
             Destroy(gameObject);
+        }
+        if (!demon.name.Contains("Lost Soul"))
+        {
+            demon.GetComponentInChildren<SpriteRenderer>().material = defaultSpriteMaterial;
         }
     }
 

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 315907402703604406}
   - component: {fileID: 7211825160483532977}
+  - component: {fileID: 575244954624244184}
   m_Layer: 0
   m_Name: Berserk
   m_TagString: Powerup
@@ -47,6 +48,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &575244954624244184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2593699767666897484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f708d3b9a2725b4c9c0f447269f172b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  increaseItems: 1
+  increaseSecrets: 0
 --- !u!1 &5986989467291646670
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,7 +170,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9018963711897399924}
   - component: {fileID: 1502252962338149985}
-  - component: {fileID: 3044507763886125584}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -240,23 +254,3 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &3044507763886125584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5993377481677161851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Version: 1
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}

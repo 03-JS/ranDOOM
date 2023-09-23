@@ -248,6 +248,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 0
+    functionName: EnableAttackLight
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 1.3833333
     functionName: PerformFlameAttack
     data: 
@@ -257,6 +264,13 @@ AnimationClip:
     messageOptions: 0
   - time: 1.6666666
     functionName: ResetAttackState
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.6666666
+    functionName: DisableAttackLight
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

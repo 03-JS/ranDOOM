@@ -19,6 +19,7 @@ public class Teleporter : MonoBehaviour
                     other.gameObject.GetComponent<CharacterMovement>().canTeleport = false;
                     other.transform.position = destination.position;
                     other.transform.rotation = destination.rotation;
+                    other.gameObject.GetComponent<CharacterMovement>().StopAllMomentum();
                     Destroy(Instantiate(go_teleportEffect, new Vector3(destination.position.x, destination.position.y + 1, destination.position.z), Quaternion.identity), 1.6f);
                 }
             }

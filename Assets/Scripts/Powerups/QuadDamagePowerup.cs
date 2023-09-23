@@ -10,6 +10,7 @@ public class QuadDamagePowerup : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        LevelStats.itemsFound++;
         ValueMultipliers.IncreasePlayerDamageMultiplier(2);
         uiManager = FindObjectOfType<UIManager>();
         uiManager.EnablePowerupIcon("Berserk");

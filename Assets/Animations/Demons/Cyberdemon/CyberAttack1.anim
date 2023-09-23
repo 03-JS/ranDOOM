@@ -189,6 +189,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 0.21666667
+    functionName: EnableAttackLight
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.23333333
     functionName: LookAtTarget
     data: 
@@ -282,6 +289,13 @@ AnimationClip:
     messageOptions: 0
   - time: 0.45
     functionName: LookAtTarget
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.45
+    functionName: DisableAttackLight
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
@@ -385,6 +399,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 0.6666667
+    functionName: EnableAttackLight
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.68333334
     functionName: LookAtTarget
     data: 
@@ -478,6 +499,13 @@ AnimationClip:
     messageOptions: 0
   - time: 0.9
     functionName: LookAtTarget
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.9
+    functionName: DisableAttackLight
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
@@ -581,6 +609,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 1.1166667
+    functionName: EnableAttackLight
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 1.1333333
     functionName: LookAtTarget
     data: 
@@ -674,6 +709,13 @@ AnimationClip:
     messageOptions: 0
   - time: 1.3333334
     functionName: LookAtTarget
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.3333334
+    functionName: DisableAttackLight
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

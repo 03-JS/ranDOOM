@@ -97,6 +97,7 @@ public class DemonHealth : MonoBehaviour
                 {
                     isDead = true;
                     rigidBody.isKinematic = true;
+                    LevelStats.kills++;
                     if (OnDemonDeath != null)
                     {
                         OnDemonDeath();
@@ -128,6 +129,7 @@ public class DemonHealth : MonoBehaviour
         demonCollider.gameObject.layer = 13;
         rigidBody.isKinematic = false;
         agent.enabled = false;
+        demonAI.DisableAttackLight();
         demonAnimator.SetTrigger("Death");
         demonAnimator.ResetTrigger("Pain");
         AudioSource.PlayClipAtPoint(ac_deathSounds[Random.Range(0, ac_deathSounds.Length)], transform.position, AudioManager.f_globalSfxVolume);
@@ -140,6 +142,7 @@ public class DemonHealth : MonoBehaviour
         demonCollider.gameObject.layer = 13;
         rigidBody.isKinematic = false;
         agent.enabled = false;
+        demonAI.DisableAttackLight();
         demonAnimator.SetTrigger("XDeath");
         demonAnimator.ResetTrigger("Pain");
         AudioSource.PlayClipAtPoint(ac_xDeathSound, transform.position, AudioManager.f_globalSfxVolume);

@@ -541,7 +541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ccont_controller: {fileID: 8171464268134036990}
-  f_speed: 8
+  f_speed: 7
   momentumDamping: 3
   f_speedIncrease: 2
   f_gravity: -39.2

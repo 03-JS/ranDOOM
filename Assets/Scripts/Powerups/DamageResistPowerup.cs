@@ -11,6 +11,7 @@ public class DamageResistPowerup : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        LevelStats.itemsFound++;
         uiManager = FindObjectOfType<UIManager>();
         uiManager.EnablePowerupIcon("Partial Invincibility");
         playerHasDamageResistance = true;

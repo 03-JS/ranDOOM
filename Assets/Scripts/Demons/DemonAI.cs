@@ -32,6 +32,7 @@ public class DemonAI : MonoBehaviour
     public GameObject go_bloodEffect;
     public AudioClip ac_painSound;
     public GameObject go_projectile;
+    public GameObject go_attackLight;
     public Transform[] tr_attackOrigins;
     public AudioClip ac_projectileAttackSound;
     public AudioClip ac_attackSound;
@@ -56,6 +57,7 @@ public class DemonAI : MonoBehaviour
     private int i_timesSightingSoundHasPlayed;
     private float f_timeBetweenRoamingSounds;
     private float f_timeTargetHasBeenOOS; // The time the demon's target has been out of sight
+    private bool isReviving;
     private GameObject go_instantiatedFlame;
     private Transform tr_destination;
     private NavMeshAgent agent;
@@ -64,7 +66,8 @@ public class DemonAI : MonoBehaviour
     private Transform tr_playerShootingPoint;
     private Transform tr_originalLOS; // Preserves the initial lineOfSightOrigin value
     private Rigidbody demonRigidbody;
-    private Collider demonCollider;
+    private SpriteRenderer demonRenderer;
+    // private Collider demonCollider;
 
     // Start is called before the first frame update
     void Start()
@@ -80,7 +83,8 @@ public class DemonAI : MonoBehaviour
         tr_playerShootingPoint = GameObject.Find("Projectile Shooting Point").transform;
         tr_originalLOS = lineOfSightOrigin;
         demonRigidbody = GetComponentInParent<Rigidbody>();
-        demonCollider = GetComponentInParent<Collider>();
+        demonRenderer = GetComponent<SpriteRenderer>();
+        // demonCollider = GetComponentInParent<Collider>();
         audioSource = GetComponent<AudioSource>();
 
         f_time = Random.Range(0, f_timeBetweenAttacks - 1f);
@@ -333,7 +337,7 @@ public class DemonAI : MonoBehaviour
                     f_timeTargetHasBeenOOS += Time.deltaTime;
                 }
             }
-            Debug.Log(f_time);
+            // Debug.Log(f_time);
         }
     }
 
@@ -516,6 +520,7 @@ public class DemonAI : MonoBehaviour
             {
                 agent.isStopped = true;
             }
+            DisableAttackLight();
             demonAnimator.SetTrigger("Pain");
             isAttacking = false;
             isInPain = true;
@@ -662,9 +667,10 @@ public class DemonAI : MonoBehaviour
         {
             if (collider.tag == "Demon")
             {
-                if (collider.gameObject.GetComponent<DemonHealth>().canBeResurrected && collider.gameObject.GetComponent<DemonHealth>().isDead)
+                if (collider.gameObject.GetComponent<DemonHealth>().canBeResurrected && collider.gameObject.GetComponent<DemonHealth>().isDead && !collider.gameObject.GetComponentInChildren<DemonAI>().isReviving)
                 {
                     collider.gameObject.GetComponent<DemonHealth>().TriggerReviveAnimation();
+                    collider.gameObject.GetComponentInChildren<DemonAI>().isReviving = true;
                 }
             }
         }
@@ -681,6 +687,7 @@ public class DemonAI : MonoBehaviour
         f_timeBetweenRoamingSounds = Random.Range(5, 15);
         isAttacking = false;
         isInPain = false;
+        isReviving = false;
     }
 
     public void SpawnFlames()
@@ -766,6 +773,25 @@ public class DemonAI : MonoBehaviour
     public void DestroyDemon()
     {
         Destroy(transform.parent.gameObject);
+    }
+
+    public void EnableAttackLight()
+    {
+        if (demonRenderer.material.name == "Sprite Material (Instance)")
+        {
+            if (go_attackLight != null)
+            {
+                go_attackLight.SetActive(true);
+            }
+        }
+    }
+
+    public void DisableAttackLight()
+    {
+        if (go_attackLight != null)
+        {
+            go_attackLight.SetActive(false);
+        }
     }
 
 }

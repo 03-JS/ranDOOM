@@ -21,7 +21,7 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 21300000, guid: 8dc45bb3af4a6aa4caadcaa4a9b8f84e, type: 3}
-    - time: 0.21666667
+    - time: 0.25
       value: {fileID: 21300000, guid: 5bdb796de5e019646b24cb52e364bcec, type: 3}
     - time: 0.41666666
       value: {fileID: 21300000, guid: 5bdb796de5e019646b24cb52e364bcec, type: 3}
@@ -191,6 +191,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 0.25
+    functionName: EnableAttackLight
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.26666668
     functionName: LookAtTarget
     data: 
@@ -263,6 +270,13 @@ AnimationClip:
     messageOptions: 0
   - time: 0.41666666
     functionName: LookAtTarget
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.41666666
+    functionName: DisableAttackLight
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

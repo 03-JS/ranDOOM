@@ -82,13 +82,20 @@ public class AudioManager : MonoBehaviour
         }
         else
         {
-            if (isMusicClassic)
+            if (SceneManager.GetActiveScene().name == "Intermission")
             {
-                PlayClassicSong();
+                PlayIntermissionMusic();
             }
             else
             {
-                PlaySong();
+                if (isMusicClassic)
+                {
+                    PlayClassicSong();
+                }
+                else
+                {
+                    PlaySong();
+                }
             }
         }
     }
@@ -96,6 +103,18 @@ public class AudioManager : MonoBehaviour
     private void PlayMenuIntro()
     {
         menuSoundEffects[0].audioSource.Play();
+    }
+
+    private void PlayIntermissionMusic()
+    {
+        if (isMusicClassic)
+        {
+            classicSongs[11].audioSource.Play();
+        }
+        else
+        {
+            songs[12].audioSource.Play();
+        }
     }
 
     public void PlaySong()

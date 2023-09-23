@@ -135,4 +135,10 @@ public class CharacterMovement : MonoBehaviour
     }
     */
 
+    public void StopAllMomentum()
+    {
+        v3_move *= 0;
+        inputMagnitude = 0;
+    }
+
 }

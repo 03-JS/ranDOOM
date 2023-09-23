@@ -113,6 +113,10 @@ public class Cheats : MonoBehaviour
             {
                 str_pattern += "E";
             }
+            if (Input.GetKeyDown(KeyCode.N))
+            {
+                str_pattern += "N";
+            }
             if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.Joystick1Button2))
             {
                 str_pattern += "Q";
@@ -217,6 +221,12 @@ public class Cheats : MonoBehaviour
                     iddqdCount = 0;
                     player.SetGodMode(false);
                 }
+                hasSequenceStarted = false;
+                f_timer = 0;
+            }
+            if (str_pattern == "IDEND")
+            {
+                gameObject.AddComponent<EndLevel>();
                 hasSequenceStarted = false;
                 f_timer = 0;
             }

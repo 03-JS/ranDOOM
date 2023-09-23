@@ -108,6 +108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 671943803203678557}
   - component: {fileID: 6257455885957099954}
+  - component: {fileID: -1139762739868856781}
   m_Layer: 2
   m_Name: Backpack
   m_TagString: Powerup
@@ -144,3 +145,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-1139762739868856781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4375437659515213342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f708d3b9a2725b4c9c0f447269f172b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  increaseItems: 1
+  increaseSecrets: 0

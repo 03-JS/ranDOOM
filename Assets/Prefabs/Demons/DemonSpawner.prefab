@@ -92,6 +92,7 @@ MonoBehaviour:
   lookOppositeToTarget: 0
   useTeleportEffect: 0
   go_teleportEffect: {fileID: 4458578217681664082, guid: 36a32df58fb81df43be10212900abf4b, type: 3}
+  defaultSpriteMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!65 &3634941710302755698
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -267,6 +267,9 @@ MonoBehaviour:
   - acl_audio: {fileID: 8300000, guid: 14ca3922a51d8024faec2baac2382288, type: 3}
     audioSource: {fileID: 0}
     b_loop: 0
+  - acl_audio: {fileID: 8300000, guid: 09967d4db3da3c3448fb610757dfe181, type: 3}
+    audioSource: {fileID: 0}
+    b_loop: 0
   weaponSoundEffects:
   - acl_audio: {fileID: 8300000, guid: 76669261995d4834085149d69cc3f521, type: 3}
     audioSource: {fileID: 0}

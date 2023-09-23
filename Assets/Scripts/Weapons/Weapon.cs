@@ -371,12 +371,12 @@ public class Weapon : MonoBehaviour
 
     public void EnableLight()
     {
-        // muzzleLight.SetActive(true);
+        muzzleLight.SetActive(true);
     }
 
     public void DisableLight()
     {
-        // muzzleLight.SetActive(false);
+        muzzleLight.SetActive(false);
     }
 
     public void SetShellsValue()

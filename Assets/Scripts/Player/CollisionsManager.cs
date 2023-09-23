@@ -91,6 +91,7 @@ public class CollisionsManager : MonoBehaviour
                         if (other.name == "Backpack")
                         {
                             uiManager.SetInfoText("Your ammo capacity has been upgraded");
+                            LevelStats.itemsFound++;
                             inventory.IncreaseAmmoCapacity();
                             PickUpPowerup(other.gameObject);
                         }
@@ -115,6 +116,7 @@ public class CollisionsManager : MonoBehaviour
             uiManager.SetInfoText("You got the " + itemName[0]);
             PickUpWeapon(other.gameObject);
             inventory.AddWeapon(itemName[0]);
+            LevelStats.itemsFound++;
             if (itemName[0] == "Shotgun" || itemName[0] == "Super Shotgun")
             {
                 inventory.AddShells(8);
@@ -255,6 +257,7 @@ public class CollisionsManager : MonoBehaviour
                 inventory.AddKeycard(other.gameObject);
             }
             PickUpItem(other.gameObject);
+            LevelStats.itemsFound++;
         }
 
         // Secrets
@@ -263,6 +266,7 @@ public class CollisionsManager : MonoBehaviour
             uiManager.SetInfoText("A secret is revealed!");
             audioManager.PlaySfx(3); // "A secret is revealed!" sound effect
             Destroy(other.gameObject);
+            LevelStats.secretsFound++;
         }
     }
 

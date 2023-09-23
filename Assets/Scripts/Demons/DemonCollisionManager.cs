@@ -85,7 +85,7 @@ public class DemonCollisionManager : MonoBehaviour
                     demonRigidbody.isKinematic = true;
                     // demonCollider.isTrigger = false;
                     gameObject.GetComponentInChildren<DemonAI>().ResetAttackState();
-                    Debug.Log("Collided with: " + collision.gameObject.name);
+                    // Debug.Log("Collided with: " + collision.gameObject.name);
                 }
             }
         }

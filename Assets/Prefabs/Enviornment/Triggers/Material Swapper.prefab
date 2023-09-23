@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 372659537534922982}
   - component: {fileID: 774636003090213324}
+  - component: {fileID: 7151091287374874122}
   m_Layer: 0
-  m_Name: Secret Trigger
+  m_Name: Material Swapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,5 +44,20 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 1, z: 1}
+  m_Size: {x: 3, y: 1, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7151091287374874122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4317653909180705736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8453f49b99f9163419f34e9fdc6e86fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ec6792076aad2844a83dbb6853dc2b20, type: 2}
