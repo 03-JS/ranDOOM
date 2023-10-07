@@ -47,7 +47,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7870068354733487972
 Transform:
   m_ObjectHideFlags: 0
@@ -541,7 +541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ccont_controller: {fileID: 8171464268134036990}
-  f_speed: 7
+  f_speed: 8
   momentumDamping: 3
   f_speedIncrease: 2
   f_gravity: -39.2

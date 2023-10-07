@@ -87,6 +87,7 @@ public class Weapon : MonoBehaviour
                         shouldInterrupt = false;
                         weaponAnimator.SetBool("shouldInterrupt", shouldInterrupt);
                         weaponAnimator.SetTrigger("Shoot");
+                        CreateSound();
                         PlayFireSound();
                         isCharging = true;
                         inventory.ConsumeCells(i_ammoPerShot);
@@ -105,6 +106,7 @@ public class Weapon : MonoBehaviour
                         weaponAnimator.SetFloat("randomMuzzleValue", Random.Range(0, 2));
                         weaponAnimator.SetBool("shouldInterrupt", shouldInterrupt);
                         weaponAnimator.SetTrigger("Shoot");
+                        CreateSound();
                         PlayFireSound();
                         inventory.ConsumeCells(i_ammoPerShot);
                         Instantiate(go_projectile, tr_fireOrigin.position, tr_fireOrigin.rotation).GetComponent<Projectile>().SetOriginatorCollider(player.gameObject.GetComponent<CharacterController>());
@@ -123,6 +125,7 @@ public class Weapon : MonoBehaviour
                     shouldInterrupt = false;
                     weaponAnimator.SetBool("shouldInterrupt", shouldInterrupt);
                     weaponAnimator.SetTrigger("Shoot");
+                    CreateSound();
                     PlayFireSound();
                     inventory.ConsumeRockets(i_ammoPerShot);
                     Instantiate(go_projectile, tr_fireOrigin.position, tr_fireOrigin.rotation).GetComponent<Projectile>().SetOriginatorCollider(player.gameObject.GetComponent<CharacterController>());
@@ -145,6 +148,7 @@ public class Weapon : MonoBehaviour
                         shouldInterrupt = false;
                         weaponAnimator.SetBool("shouldInterrupt", shouldInterrupt);
                         weaponAnimator.SetTrigger("Shoot");
+                        CreateSound();
                         PlayFireSound();
                         inventory.ConsumeShells(i_ammoPerShot);
                         Vector3 v3_shootDirection = tr_fireOrigin.transform.forward;
@@ -201,6 +205,7 @@ public class Weapon : MonoBehaviour
                         shouldInterrupt = false;
                         weaponAnimator.SetBool("shouldInterrupt", shouldInterrupt);
                         weaponAnimator.SetTrigger("Shoot");
+                        CreateSound();
                         PlayFireSound();
                         inventory.ConsumeShells(i_ammoPerShot);
                         Vector3 v3_shootDirection = tr_fireOrigin.transform.forward;
@@ -259,6 +264,7 @@ public class Weapon : MonoBehaviour
                     shouldInterrupt = false;
                     weaponAnimator.SetBool("shouldInterrupt", shouldInterrupt);
                     weaponAnimator.SetTrigger("Shoot");
+                    CreateSound();
                     PlayFireSound();
                     inventory.ConsumeBullets(i_ammoPerShot);
                     Vector3 v3_shootDirection = tr_fireOrigin.transform.forward;
@@ -395,6 +401,28 @@ public class Weapon : MonoBehaviour
     private void StopShotgunSFX()
     {
         audioManager.StopWeaponSfx(5);
+    }
+
+    private void CreateSound()
+    {
+        Vector3 v3_soundOrigin = tr_fireOrigin.position;
+        Collider[] collidersInRange = Physics.OverlapSphere(v3_soundOrigin, Mathf.Infinity);
+        foreach (Collider collider in collidersInRange)
+        {
+            int layerMask = LayerMask.GetMask("Default", "Demon", "Cyberdemon");
+            RaycastHit hitInfo;
+            if (Physics.Raycast(v3_soundOrigin, collider.transform.position - v3_soundOrigin, out hitInfo, Mathf.Infinity, layerMask, QueryTriggerInteraction.Ignore))
+            {
+                if (hitInfo.collider == collider)
+                {
+                    if (collider.CompareTag("Demon"))
+                    {
+                        collider.gameObject.GetComponentInChildren<DemonAI>().SetTarget(player.gameObject.transform);
+                        collider.gameObject.GetComponentInChildren<DemonAI>().isAggro = true;
+                    }
+                }
+            }
+        }
     }
 
 }

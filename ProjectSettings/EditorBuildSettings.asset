@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/The Graveyard.unity
     guid: 48bd34a99fc27994f9b0396be3ce0a24
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Waste Complex.unity
     guid: e7420aa0aeedb14479bcf7037144aad7
   - enabled: 0

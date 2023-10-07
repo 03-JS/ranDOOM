@@ -65,11 +65,11 @@ public class PlayerHealthAndArmor : MonoBehaviour
                 uiManager.tmp_healthBonus.SetText("");
             }
         }
-        if (i_armor == 0)
-        {
-            uiManager.img_armorIcon.enabled = false;
-            uiManager.tmp_armor.SetText("");
-        }
+        //if (i_armor == 0)
+        //{
+        //    uiManager.img_armorIcon.enabled = false;
+        //    uiManager.tmp_armor.SetText("");
+        //}
         if (isDead)
         {
             if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.Joystick2Button4))
@@ -178,6 +178,8 @@ public class PlayerHealthAndArmor : MonoBehaviour
             }
             else
             {
+                uiManager.img_armorIcon.enabled = false;
+                uiManager.tmp_armor.SetText("");
                 SubstractHealth((int)amount);
                 if (i_health <= 0)
                 {
