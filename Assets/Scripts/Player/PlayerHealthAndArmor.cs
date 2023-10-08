@@ -138,11 +138,16 @@ public class PlayerHealthAndArmor : MonoBehaviour
         if (i_armor > 0)
         {
             i_armor -= amount;
-            if (i_armor < 0)
+            if (i_armor <= 0)
             {
                 i_armor = 0;
+                uiManager.img_armorIcon.enabled = false;
+                uiManager.tmp_armor.SetText("");
             }
-            uiManager.tmp_armor.SetText(i_armor + "");
+            else
+            {
+                uiManager.tmp_armor.SetText(i_armor + "");
+            }
         }
     }
 
@@ -178,8 +183,6 @@ public class PlayerHealthAndArmor : MonoBehaviour
             }
             else
             {
-                uiManager.img_armorIcon.enabled = false;
-                uiManager.tmp_armor.SetText("");
                 SubstractHealth((int)amount);
                 if (i_health <= 0)
                 {
