@@ -10,6 +10,7 @@ public class PlayerHealthAndArmor : MonoBehaviour
     public int i_health = 100;
     public int i_armor = 0;
     public float f_bonusTimeLimit;
+    public bool deathEndsLevel;
 
     public GameObject go_painEffect;
     public Animator painAnimator;
@@ -250,7 +251,14 @@ public class PlayerHealthAndArmor : MonoBehaviour
         uiManager.img_crosshair.enabled = false;
         uiManager.DisableUI();
         inventory.DisableCurrentlyEquippedWeapon();
-        LevelStats.ResetStats();
+        if (!deathEndsLevel)
+        {
+            LevelStats.ResetStats();
+        }
+        else
+        {
+            Invoke("EndLevelOnDeath", 2.75f);
+        }
     }
 
     public void SetGodMode(bool value)
@@ -270,5 +278,10 @@ public class PlayerHealthAndArmor : MonoBehaviour
     {
         isInvulnerable = value;
         // Debug.Log("Is player invul?: " + isInvulnerable);
+    }
+
+    public void EndLevelOnDeath()
+    {
+        gameObject.AddComponent<EndLevel>();
     }
 }

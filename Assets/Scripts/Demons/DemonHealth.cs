@@ -156,6 +156,7 @@ public class DemonHealth : MonoBehaviour
 
     public void Revive()
     {
+        LevelStats.kills--;
         isDead = false;
         i_health = i_maxHealth;
         // demonCollider.isTrigger = false;

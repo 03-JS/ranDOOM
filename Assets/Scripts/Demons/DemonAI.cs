@@ -449,6 +449,7 @@ public class DemonAI : MonoBehaviour
         Physics.IgnoreCollision(transform.parent.GetComponent<Collider>(), lostSoul.GetComponent<Collider>(), true);
         // Physics.IgnoreCollision(transform.parent.GetComponent<Collider>(), lostSoul.GetComponentInChildren<Collider>(), true);
         lostSoul.GetComponentInChildren<DemonAI>().SetTarget(tr_destination);
+        LevelStats.maxKills++;
     }
 
     public void SpawnLostSouls()
@@ -457,6 +458,7 @@ public class DemonAI : MonoBehaviour
         {
             GameObject lostSoul = Instantiate(go_projectile, origin.position, origin.rotation);
             lostSoul.GetComponentInChildren<DemonAI>().SetTarget(tr_destination);
+            LevelStats.maxKills++;
         }
     }
 
