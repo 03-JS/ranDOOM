@@ -26,7 +26,7 @@ public static class BakeSpritesLigthingEditor
 //		data.sprites.Clear ();
 //		data.meshes.Clear ();
 		
-		for (int i = 0; i < EditorSceneManager.loadedSceneCount; i++)
+		for (int i = 0; i < SceneManager.loadedSceneCount; i++)
 		{
 			Scene scene = EditorSceneManager.GetSceneAt(i);
 			data.scenes.Add (scene.path);
@@ -68,7 +68,7 @@ public static class BakeSpritesLigthingEditor
     [MenuItem("Lighting/Prepare Sprites")]
     public static void PrepareSprites()
     {
-        for (int i = 0; i < EditorSceneManager.loadedSceneCount; i++)
+        for (int i = 0; i < SceneManager.loadedSceneCount; i++)
         {
             Scene scene = EditorSceneManager.GetSceneAt(i);
             foreach (var root in scene.GetRootGameObjects())
@@ -96,7 +96,7 @@ public static class BakeSpritesLigthingEditor
     [MenuItem("Lighting/Clean Sprites")]
     public static void CleanLightingSpriteData()
     {
-        for (int i = 0; i < EditorSceneManager.loadedSceneCount; i++)
+        for (int i = 0; i < SceneManager.loadedSceneCount; i++)
         {
             Scene scene = EditorSceneManager.GetSceneAt(i);
             foreach (var root in scene.GetRootGameObjects())
@@ -117,7 +117,7 @@ public static class BakeSpritesLigthingEditor
     [MenuItem("Lighting/Log Sprites Light Data")]
     public static void LogLightingSpriteData()
     {
-        for (int i = 0; i < EditorSceneManager.loadedSceneCount; i++)
+        for (int i = 0; i < SceneManager.loadedSceneCount; i++)
         {
             Scene scene = EditorSceneManager.GetSceneAt(i);
             foreach (var root in scene.GetRootGameObjects())

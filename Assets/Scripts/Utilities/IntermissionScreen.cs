@@ -14,6 +14,7 @@ public class IntermissionScreen : MonoBehaviour
     public TextMeshProUGUI[] tmp_percents;
     public GameObject text;
     public string[] levels;
+    public string[] enduranceTrials;
 
     private string nextLevel;
     private AudioManager audioManager;
@@ -232,15 +233,29 @@ public class IntermissionScreen : MonoBehaviour
     public void PrepareNextLevel()
     {
         listenToInput = false;
-        nextLevel = levels[UnityEngine.Random.Range(0, levels.Length)];
-        if (levels.Length > 1)
+        if (tmp_levelTitle.text.Contains("ENDURANCE TRIAL"))
         {
-            while (nextLevel == LevelStats.level)
+            nextLevel = enduranceTrials[UnityEngine.Random.Range(0, enduranceTrials.Length)];
+            if (enduranceTrials.Length > 1)
             {
-                nextLevel = levels[UnityEngine.Random.Range(0, levels.Length)];
+                while (nextLevel == LevelStats.level)
+                {
+                    nextLevel = enduranceTrials[UnityEngine.Random.Range(0, enduranceTrials.Length)];
+                }
             }
         }
-        Debug.Log(nextLevel);
+        else
+        {
+            nextLevel = levels[UnityEngine.Random.Range(0, levels.Length)];
+            if (levels.Length > 1)
+            {
+                while (nextLevel == LevelStats.level)
+                {
+                    nextLevel = levels[UnityEngine.Random.Range(0, levels.Length)];
+                }
+            }
+        }
+        // Debug.Log(nextLevel);
         tmp_levelTitle.SetText("ENTERING");
         tmp_subtitle.SetText(nextLevel.ToUpper());
         text.SetActive(false);

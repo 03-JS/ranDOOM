@@ -63,7 +63,6 @@ MonoBehaviour:
   isOn: 0
   turnsOff: 0
   activatesObjects: 0
-  createsLight: 1
   light: {fileID: 7290356879065305363}
   objects: []
   f_timeLimit: 6
@@ -182,7 +181,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7290356879065305363}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.00000022351742, y: 0, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

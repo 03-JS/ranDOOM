@@ -71,7 +71,7 @@ public class BakeSpritesMeshExporter : MonoBehaviour
 
 	void ReplaceSpritesForMeshes()
 	{
-		for (int i = 0; i < EditorSceneManager.loadedSceneCount; i++)
+		for (int i = 0; i < SceneManager.loadedSceneCount; i++)
 		{
 			Scene scene = EditorSceneManager.GetSceneAt(i);
 			foreach (var root in scene.GetRootGameObjects())

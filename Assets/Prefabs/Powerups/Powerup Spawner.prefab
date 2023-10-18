@@ -26,13 +26,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906528057768033673}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.5587316, y: -4.503036, z: -94.45188}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5572299318910103437
 MonoBehaviour:
@@ -46,12 +46,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1905e514d2ee59249abfb6bbf506e1bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObjects:
-  - {fileID: 4445924383399128013, guid: 316c58ac020e9364eb2fe609ecb4facf, type: 3}
-  - {fileID: 1990299847246732893, guid: 4baa348271a03ff4e94ea43ccbcf988c, type: 3}
+  powerups:
   - {fileID: 3110081010747420649, guid: c045769864916b546902d7f06c1bb4c1, type: 3}
+  - {fileID: 1990299847246732893, guid: 4baa348271a03ff4e94ea43ccbcf988c, type: 3}
+  - {fileID: 4445924383399128013, guid: 316c58ac020e9364eb2fe609ecb4facf, type: 3}
   - {fileID: 2593699767666897484, guid: 137103cd535e77e4fb9d181b3ec18e78, type: 3}
-  i_range: 4
+  respawns: 0
+  respawnEffect: {fileID: 7235201592971254015, guid: 3a435181266fbbf46bed5f1648f29fdf, type: 3}
 --- !u!65 &5483665853589171221
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60,9 +61,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906528057768033673}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7482214042137189161
@@ -79,5 +88,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_OverrideArea: 0
   m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
   m_IgnoreFromBuild: 1
+  m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
