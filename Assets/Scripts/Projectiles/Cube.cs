@@ -42,6 +42,7 @@ public class Cube : MonoBehaviour
     public void SetDefaultMaterial(Material material)
     {
         defaultMaterial = material;
+        gameObject.GetComponentInChildren<SpriteRenderer>().material = defaultMaterial;
     }
 
     private void SpawnDemon()

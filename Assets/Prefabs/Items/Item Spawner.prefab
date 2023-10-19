@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2537339091550093172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6670376017056844810}
+  - component: {fileID: 8031842214982407299}
+  - component: {fileID: 5938724709683008757}
+  m_Layer: 0
+  m_Name: Item Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6670376017056844810
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2537339091550093172}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8031842214982407299
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2537339091550093172}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5938724709683008757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2537339091550093172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73484a9eb287b5246bbb4d38fa012a26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthItems:
+  - {fileID: 8656171839629517251, guid: 568e130bdecd0a64d885db92a167e8f9, type: 3}
+  - {fileID: 514602784872386827, guid: 3619e50388b4faf47a916f6be56ebb74, type: 3}
+  - {fileID: 514602784872386827, guid: 2379e7b5c54411144b6ec621b6036549, type: 3}
+  armorItems:
+  - {fileID: 5303271677151992053, guid: 64385f773341d7a41aa9c84b2146df66, type: 3}
+  - {fileID: 5303271677151992053, guid: 4aa220aa5bb2c564c96902e7b2fecaa8, type: 3}
+  ammoItems:
+  - {fileID: 2562910628214710597, guid: 8f97ec245b7f9cd4485edf50e7c324f9, type: 3}
+  - {fileID: 2562910628214710597, guid: ae18ddd93fbeede48b1508c9c170368b, type: 3}
+  - {fileID: 2562910628214710597, guid: 5743711ce581c9e46bf8d1ba8d6f7435, type: 3}
+  - {fileID: 2562910628214710597, guid: 094e67a8aa9500c4a8b3295d70d2b4fa, type: 3}
+  respawnEffect: {fileID: 7235201592971254015, guid: 3a435181266fbbf46bed5f1648f29fdf, type: 3}
+  spawnsHealth: 0
+  spawnsArmor: 0
+  spawnsAmmo: 0

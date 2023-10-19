@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51017d0991b98be41b961f066b1bc973, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 10
   demons:
   - {fileID: 1762775525252999684, guid: ca79edf16b0a9444c9b73b7359f23651, type: 3}
   - {fileID: 3865212742312476693, guid: d276c93a77aef8a41bafff073c9a63ee, type: 3}

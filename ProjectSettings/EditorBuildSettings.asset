@@ -11,12 +11,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Intermission.unity
     guid: 1a4a76facad3f08448b14473a0727514
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/The Graveyard.unity
     guid: 48bd34a99fc27994f9b0396be3ce0a24
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Dark Halls.unity
     guid: 926cca5f893240d45be4f9d1f1eefc77
+  - enabled: 1
+    path: Assets/Scenes/Endurance Trial - Abandoned Facility.unity
+    guid: 26aa6ea2bd010634e976e5a2538cb820
+  - enabled: 1
+    path: Assets/Scenes/Endurance Trial - The Graveyard.unity
+    guid: a9104167a6a5162488e0207a688d7cd0
   - enabled: 0
     path: Assets/Scenes/Waste Complex.unity
     guid: e7420aa0aeedb14479bcf7037144aad7

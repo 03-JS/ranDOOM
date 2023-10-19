@@ -166,4 +166,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ac_soundEffect: {fileID: 8300000, guid: 3559538bbe3c91d4f8c54d7ea41f5569, type: 3}
-  duration: 1
+  duration: 0.8

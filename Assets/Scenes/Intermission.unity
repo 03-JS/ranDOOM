@@ -1990,6 +1990,7 @@ MonoBehaviour:
   - Dark Halls
   enduranceTrials:
   - Endurance Trial - Abandoned Facility
+  - Endurance Trial - The Graveyard
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
