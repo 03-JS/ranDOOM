@@ -121,6 +121,10 @@ public class Cheats : MonoBehaviour
             {
                 str_pattern += "Q";
             }
+            if (Input.GetKeyDown(KeyCode.X))
+            {
+                str_pattern += "X";
+            }
             ApplyCheatEffect();
         }
     }
@@ -140,7 +144,7 @@ public class Cheats : MonoBehaviour
             {
                 player.AddArmor(1000);
                 player.AddHealth(1000);
-                inventory.SetAmmoCapacityToMax();
+                inventory.SetAmmoCapacityToDefaultMax();
                 inventory.AddShells(24);
                 inventory.AddCells(250);
                 inventory.AddBullets(180);
@@ -155,7 +159,7 @@ public class Cheats : MonoBehaviour
             {
                 player.AddArmor(1000);
                 player.AddHealth(1000);
-                inventory.SetAmmoCapacityToMax();
+                inventory.SetAmmoCapacityToDefaultMax();
                 inventory.AddShells(24);
                 inventory.AddCells(250);
                 inventory.AddBullets(180);
@@ -227,6 +231,21 @@ public class Cheats : MonoBehaviour
             if (str_pattern == "IDEND")
             {
                 gameObject.AddComponent<EndLevel>();
+                hasSequenceStarted = false;
+                f_timer = 0;
+            }
+            if (str_pattern == "IDXA")
+            {
+                player.AddArmor(1000);
+                player.AddHealth(1000);
+                inventory.SetAmmoCapacityToMax();
+                inventory.AddShells(52);
+                inventory.AddCells(425);
+                inventory.AddBullets(390);
+                inventory.AddRockets(27);
+                inventory.AddFuel(3);
+                inventory.AddAllWeapons();
+                uiManager.SetInfoText("Extended ammo capacity and ammo added");
                 hasSequenceStarted = false;
                 f_timer = 0;
             }

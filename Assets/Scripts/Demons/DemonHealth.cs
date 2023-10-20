@@ -173,14 +173,17 @@ public class DemonHealth : MonoBehaviour
 
     private void Infight(GameObject originator)
     {
-        if (canInfight && originator != null && originator.name != "Archvile(Clone)")
+        if (originator != null)
         {
-            float f_randomInfightValue = Random.Range(0, 11);
-            if (f_randomInfightValue < f_infightChance)
+            if (canInfight && originator.name != "Archvile(Clone)")
             {
-                if (agent.isActiveAndEnabled)
+                float f_randomInfightValue = Random.Range(0, 11);
+                if (f_randomInfightValue < f_infightChance)
                 {
-                    demonAI.SetTarget(originator.transform);
+                    if (agent.isActiveAndEnabled)
+                    {
+                        demonAI.SetTarget(originator.transform);
+                    }
                 }
             }
         }

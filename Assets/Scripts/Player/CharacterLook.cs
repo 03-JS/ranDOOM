@@ -11,7 +11,7 @@ public class CharacterLook : MonoBehaviour
     private PlayerHealthAndArmor player;
 
     // Static variables
-    public static float f_globalMouseSensitivity = 666f;
+    public static float f_globalMouseSensitivity = 5f;
     public static int i_globalFOV = 90;
     private static Camera playerCamera;
 
@@ -30,10 +30,10 @@ public class CharacterLook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!player.isDead)
+        if (!player.isDead && !MenuInputManager.gameIsPaused)
         {
-            float f_xAxis = Input.GetAxis("Mouse X") * Time.deltaTime * f_globalMouseSensitivity;
-            float f_yAxis = Input.GetAxis("Mouse Y") * Time.deltaTime * f_globalMouseSensitivity;
+            float f_yAxis = Input.GetAxis("Mouse Y") * f_globalMouseSensitivity;
+            float f_xAxis = Input.GetAxis("Mouse X") * f_globalMouseSensitivity;
             f_xRotation -= f_yAxis;
             f_xRotation = Mathf.Clamp(f_xRotation, -90f, 90f);
             transform.localRotation = Quaternion.Euler(f_xRotation, 0f, 0f);

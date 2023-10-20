@@ -29,7 +29,7 @@ public class ValuesManager : MonoBehaviour
     private static string defaultMusicText = "100";
     private static string defaultSfxText = "100";
     private static string defaultMusicStyleText = "Music Style: <color=yellow>Remade</color>";
-    private static string defaultSensitivityText = "666";
+    private static string defaultSensitivityText = "5";
     private static string defaultFOVText = "90";
     private static string defaultCtrlsFeelText = "Smooth Controls:<color=yellow> On</color>";
     private static string defaultHeadBobText = "Headbob:<color=yellow> On</color>";

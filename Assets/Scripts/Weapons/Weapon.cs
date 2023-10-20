@@ -417,8 +417,11 @@ public class Weapon : MonoBehaviour
                 {
                     if (collider.CompareTag("Demon"))
                     {
-                        collider.gameObject.GetComponentInChildren<DemonAI>().SetTarget(player.gameObject.transform);
-                        collider.gameObject.GetComponentInChildren<DemonAI>().isAggro = true;
+                        if (!collider.gameObject.GetComponentInChildren<DemonAI>().isAggro)
+                        {
+                            collider.gameObject.GetComponentInChildren<DemonAI>().SetTarget(player.gameObject.transform);
+                            collider.gameObject.GetComponentInChildren<DemonAI>().isAggro = true;
+                        }
                     }
                 }
             }

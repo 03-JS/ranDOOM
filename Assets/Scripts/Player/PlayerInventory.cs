@@ -38,7 +38,7 @@ public class PlayerInventory : MonoBehaviour
     private int i_rocketsBonus;
     private float f_rocketBonusTimer;
     private bool isRocketBonusActive;
-    private int i_maxRockets = 6;
+    private int i_maxRockets = 5;
 
     private UIManager uiManager;
     // private int[] i_recentWeaponsIndexes = { 1, 1 };
@@ -146,40 +146,62 @@ public class PlayerInventory : MonoBehaviour
 
     public void IncreaseAmmoCapacity()
     {
-        i_maxShells += 4;
-        if (i_maxShells > 24)
-        {
-            i_maxShells = 24;
-        }
-        i_maxBullets += 30;
-        if (i_maxBullets > 180)
-        {
-            i_maxBullets = 180;
-        }
-        i_maxCells += 25;
-        if (i_maxCells > 250)
-        {
-            i_maxCells = 250;
-        }
-        i_maxRockets += 2;
-        if (i_maxRockets > 13)
-        {
-            i_maxRockets = 13;
-        }
         i_ammoCapLevel++;
-        if (i_ammoCapLevel > 4)
+        if (i_ammoCapLevel < 12)
         {
-            i_ammoCapLevel = 4;
+            switch (i_ammoCapLevel)
+            {
+                case 1:
+                    i_maxShells = 12;
+                    i_maxBullets = 90;
+                    i_maxCells = 175;
+                    i_maxRockets = 7;
+                    break;
+                case 2:
+                    i_maxShells = 16;
+                    i_maxBullets = 120;
+                    i_maxCells = 200;
+                    i_maxRockets = 9;
+                    break;
+                case 3:
+                    i_maxShells = 20;
+                    i_maxBullets = 150;
+                    i_maxCells = 225;
+                    i_maxRockets = 11;
+                    break;
+                case 4:
+                    i_maxShells = 24;
+                    i_maxBullets = 180;
+                    i_maxCells = 250;
+                    i_maxRockets = 13;
+                    break;
+                default:
+                    i_maxShells += 4;
+                    i_maxBullets += 30;
+                    i_maxCells += 25;
+                    i_maxRockets += 2;
+                    break;
+            }
         }
+        Debug.Log("Ammo cap: " + i_ammoCapLevel);
     }
 
-    public void SetAmmoCapacityToMax()
+    public void SetAmmoCapacityToDefaultMax()
     {
         i_maxShells = 24;
         i_maxCells = 250;
         i_maxBullets = 180;
         i_maxRockets = 13;
         i_ammoCapLevel = 4;
+    }
+
+    public void SetAmmoCapacityToMax()
+    {
+        i_maxShells = 52;
+        i_maxCells = 425;
+        i_maxBullets = 390;
+        i_maxRockets = 27;
+        i_ammoCapLevel = 11;
     }
 
     public void AddKeycard(GameObject key)

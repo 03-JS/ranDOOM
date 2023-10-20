@@ -15,7 +15,7 @@ public class Cube : MonoBehaviour
     // Start is called before the first frame update
     //void Start()
     //{
-        
+
     //}
 
     // Update is called once per frame
@@ -50,6 +50,9 @@ public class Cube : MonoBehaviour
         LevelStats.maxKills++;
         GameObject demon = Instantiate(demons[Random.Range(0, demons.Length)], target.position, Quaternion.identity);
         demon.GetComponentInChildren<DemonAI>().isAggro = true;
-        demon.GetComponentInChildren<SpriteRenderer>().material = defaultMaterial;
+        if (!demon.name.ToUpper().Contains("LOST SOUL"))
+        {
+            demon.GetComponentInChildren<SpriteRenderer>().material = defaultMaterial;
+        }
     }
 }

@@ -139,40 +139,44 @@ public class Chainsaw : MonoBehaviour
 
     private void GiveAmmo()
     {
-        if (inventory.GetAmmoCapLevel() == 0)
+        switch (inventory.GetAmmoCapLevel())
         {
-            inventory.AddShells(10);
-            inventory.AddCells(75);
-            inventory.AddBullets(30);
-            inventory.AddRockets(4);
-        }
-        if (inventory.GetAmmoCapLevel() == 1)
-        {
-            inventory.AddShells(10);
-            inventory.AddCells(90);
-            inventory.AddBullets(50);
-            inventory.AddRockets(5);
-        }
-        if (inventory.GetAmmoCapLevel() == 2)
-        {
-            inventory.AddShells(10);
-            inventory.AddCells(105);
-            inventory.AddBullets(60);
-            inventory.AddRockets(5);
-        }
-        if (inventory.GetAmmoCapLevel() == 3)
-        {
-            inventory.AddShells(15);
-            inventory.AddCells(120);
-            inventory.AddBullets(80);
-            inventory.AddRockets(6);
-        }
-        if (inventory.GetAmmoCapLevel() == 4)
-        {
-            inventory.AddShells(15);
-            inventory.AddCells(135);
-            inventory.AddBullets(90);
-            inventory.AddRockets(6);
+            case 0:
+                inventory.AddShells(10);
+                inventory.AddCells(75);
+                inventory.AddBullets(30);
+                inventory.AddRockets(4);
+                break;
+            case 1:
+                inventory.AddShells(10);
+                inventory.AddCells(90);
+                inventory.AddBullets(50);
+                inventory.AddRockets(5);
+                break;
+            case 2:
+                inventory.AddShells(10);
+                inventory.AddCells(105);
+                inventory.AddBullets(60);
+                inventory.AddRockets(5);
+                break;
+            case 3:
+                inventory.AddShells(15);
+                inventory.AddCells(120);
+                inventory.AddBullets(80);
+                inventory.AddRockets(6);
+                break;
+            case 4:
+                inventory.AddShells(15);
+                inventory.AddCells(135);
+                inventory.AddBullets(90);
+                inventory.AddRockets(6);
+                break;
+            default:
+                inventory.AddShells(24);
+                inventory.AddCells(250);
+                inventory.AddBullets(180);
+                inventory.AddRockets(13);
+                break;
         }
     }
 
